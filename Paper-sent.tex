@@ -30,7 +30,7 @@
 	\section{Intro}
 	\begin{frame}
 		\frametitle{Agent Factorization}
-		\includegraphics[width=\textwidth]{agent-factor.png}
+		\includegraphics[height=0.9\textheight,width=\textwidth]{agent-factor.png}
 	\end{frame}
 	\begin{frame}
 		\frametitle{Agent Factorization}
@@ -78,7 +78,7 @@
 	\end{frame}
 	\begin{frame}
 		\frametitle{Variables (I)}
-		Cost for a AGV for traversing an edge
+		Cost for an AGV for traversing an edge
 		\begin{itemize}
 			\item $cost_e(t) = cost_e^{travel} + cost_e^{add}(t)$
 		\end{itemize}
@@ -91,18 +91,19 @@
 		\frametitle{Learning $c_e^{add}(t)$}
 		%Problem Complexity too high for real world workload
 		%\includegraphics[width=\textwidth]{learn-model.png}
-		Image there is an image here
+	    \includegraphics[height=0.9\textheight,width=0.9\textwidth]{learn-model.png}
 	\end{frame}
 	\begin{frame}
 		\frametitle{Variables (II)}
 		\begin{itemize}
 			\item State of the agents\\ $S_i(t) = [S_e(t)]$, $\forall e \in \mathcal{E}_i$
-
+    \\.
 
 			\item Action of agents\\ $a_i(t) = \pi(S_e(t)) = [cost_e^{add}(t)]$, $\forall e \in \mathcal{E}_i$
-
+\\.
 
 			\item Object of the agents\\ $max_\Pi G(\Pi)$ = total deliveries
+			
 		\end{itemize}
 	\end{frame}
 
@@ -126,7 +127,7 @@
 		\column{.5\textwidth}
 			\includegraphics[width=\textwidth]{link.png}
 		\column{.5\textwidth}
-			Every Link Agent is assigned too a single directed edge
+			Every Link Agent is assigned to in a single directed edge
 			\begin{itemize}
 				\item $N = |\mathcal{E}|$
 				\item $s_i^{link}(t) = n_{e_i}(t)$
@@ -140,7 +141,7 @@
 		\column{.5\textwidth}
 			\includegraphics[width=\textwidth]{intersection.png}
 		\column{.5\textwidth}
-			Every Intersection Agent is assigned the set of incoming edges of a vertex
+			Every Intersection Agent is assigned to the set of incoming edges of a vertex
 			\begin{itemize}
 				\item $N = |V| < |\mathcal{E}|$
 				\item $s_i^{int}(t) = [n_{e_i}(t)]$, $\forall e \in \mathcal{E}_i$
@@ -162,8 +163,52 @@
 			\item $a_i^{int,time}(t) = [c_{e_i}^{add}(t)]$, $\forall e \in \mathcal{E}_i$
 		\end{itemize}
 	\end{frame}
-	\section{Experimental Setup}
+	\section{Experiment}
 	\begin{frame}
+	\frametitle{Test Warehouse}
+	\begin{center}
+    \includegraphics[height=0.9\textheight,width=0.9\textwidth]{exp-r.png}
+    \end{center}
 	\end{frame}
+	
+	\begin{frame}
+	\frametitle{Simulated Graph of Warehouse}
+	\begin{center}
+    \includegraphics[height=0.9\textheight,width=0.9\textwidth]{exp.png}
+	\end{center}
+	\end{frame}
+	
+	\begin{frame}
+	\frametitle{Comparison of Agent Definitions}
+	\begin{center}
+    \includegraphics[width=1\textwidth]{comp.png}
+	\end{center}
+	\end{frame}
+	
+		\begin{frame}
+	\frametitle{Average Team}
+	\begin{center}
+    \includegraphics[height=0.425\textheight ]{graph1.png}
+    
+    
+     \includegraphics[height=0.425\textheight]{graph2.png}
+     \end{center}
+	\end{frame}
+	
+	\begin{frame}
+	\frametitle{Performance Distribution}
+	\begin{center}
+    \includegraphics[height=0.425\textheight ]{violin1.png}
+    
+    
+     \includegraphics[height=0.425\textheight]{violin2.png}
+     \end{center}
+	\end{frame}
+	
+	\begin{frame}
+	\frametitle{End}
+    Thank you!
+	\end{frame}
+
 
 \end{document}
