@@ -1,0 +1,29 @@
+### Slide 0:
+Hi We are Kallinteris and Orfanoudakis
+and we are going to be presenting a paper on improving MA learning perfomance by altering
+the definition of agents
+
+
+### AgentFactor:
+there exist (complex) domains in which it is very hard for a single agent system to
+perform the required tasks and learn.
+and in those domains we split the worload to multiple each repsonsible for a part of the
+domain.
+
+
+### agent Factor Flex:
+there exist multi agent systems in which the defintion of the agents is natural result of 
+the enviroment
+while others like network routing enable more flexible agent definition
+imagine having a network with 1mil nodes producers and consumers on a complex topology
+how do you define agents to route packages
+this paper on choosing the best agent defition of learning.
+
+
+### domain
+This paper uses the routing of AGV (imagine amazon warehouse) as an example of defining 
+agents
+In this domain (which we represent in a graph) we have AGV and routes...
+The agent system job is to creative incetives for routing while dynamicaly
+avoiding congested areas
+
