@@ -151,6 +151,20 @@
 		\end{columns}
 	\end{frame}
 	\begin{frame}
+		\frametitle{Central Agent}
+		\begin{columns}
+		\column{.5\textwidth}
+			\includegraphics[width=\textwidth]{central.png}
+		\column{.5\textwidth}
+			1 Agent manages the whole system
+			\begin{itemize}
+				\item $N = 1$
+				\item $s_i^{central}(t) = [n_{e_i}(t)]$, $\forall e \in G$
+				\item $a_i^{central}(t) = [c_{e_i}^{add}(t)]$, $\forall e \in G$
+			\end{itemize}
+		\end{columns}
+	\end{frame}
+	\begin{frame}
 		\frametitle{Agents with incorporated travel time}
 		Previous agents + additional state ($d_{e_i}(t)$)
 		indicating the remaining time until the latest AGV reaches the vertex \\ .
@@ -162,6 +176,11 @@
 		\begin{itemize}
 			\item $s_i^{int,time}(t) = [n_{e_i}(t)], d_{e_i}(t)]$, $\forall e \in \mathcal{E}_i$
 			\item $a_i^{int,time}(t) = [c_{e_i}^{add}(t)]$, $\forall e \in \mathcal{E}_i$
+		\end{itemize}
+.
+		\begin{itemize}
+			\item $s_i^{central}(t) = [n_{e_i}(t), d_{e_i}]$, $\forall e \in G$
+			\item $a_i^{central}(t) = [c_{e_i}^{add}(t)]$, $\forall e \in G$
 		\end{itemize}
 	\end{frame}
 	\section{Experiment}
@@ -197,10 +216,10 @@
 	\end{frame}
 
 	\begin{frame}
-	\frametitle{Average Team Perfomance}
+	\frametitle{Best Team Perfomance across training epochs}
 	\begin{center}
-		\includegraphics[height=0.425\textheight]{graph2.png}
-		\includegraphics[height=0.425\textheight ]{graph1.png}
+		\includegraphics[height=0.425\textheight]{max0.png}
+		\includegraphics[height=0.425\textheight]{max1.png}
 	\end{center}
 	\end{frame}
 	
@@ -219,12 +238,14 @@
 	\frametitle{Further reading recommendations}
 		\begin{itemize}
 			\item A Comprehensive Survey of MARL : https://ieeexplore.ieee.org/document/4445757
-			\item 
+			\item Something about learing
+			\item This paper https://dl.acm.org/doi/10.5555/3306127.3331908
 		\end{itemize}
 	\end{frame}
 	\begin{frame}
 	\frametitle{End}
-    Thank you!
+	Thank you!
+	Any Questions!
 	\end{frame}
 
 

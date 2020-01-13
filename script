@@ -23,7 +23,7 @@ this paper on choosing the best agent defition of learning.
 ### domain
 This paper uses the routing of AGV (imagine amazon warehouse) as an example of defining 
 agents
-In this domain (which we represent in a graph) we have AGV and routes...
+In this domain (which we represent in a graph) we have AGV and routes(with capacity)...
 The agent system job is to creative incetives for routing while dynamicaly
 avoiding congested areas
 
